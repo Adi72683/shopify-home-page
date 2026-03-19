@@ -403,7 +403,7 @@ overflow-x:hidden;
 
 
 .brands{
-  padding:60px 20px;
+  padding:60px 0;
   background:#f5f5f5;
 }
 
@@ -428,31 +428,49 @@ overflow-x:hidden;
 }
 
 /* Mobile view */
-@media (max-width: 600px){
+@media (max-width:768px){
+
   .brand-grid{
-    grid-template-columns:1fr;
-    justify-items:center;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    padding:0 10px;
   }
 
   .brand-card{
-    justify-content:center; 
-    text-align:center;      
-    flex-direction:column;  
+    display:flex;              /* 🔥 horizontal layout */
     align-items:center;
+    gap:15px;
+
+    width:100%;
+    padding:15px;
+
+    background:#f1f1f1;
+    border-radius:16px;
+
+    box-sizing:border-box;
   }
 
+  /* IMAGE */
   .brand-card img{
-    width:50px;
-    height:50px;
+    width:70px;
+    height:70px;
+    border-radius:50%;
+    object-fit:cover;
+    flex-shrink:0;
   }
 
+  /* TEXT */
   .brand-card h3{
-    font-size:18px;
+    font-size:20px;
+    margin-bottom:5px;
   }
 
   .brand-card p{
-    font-size:13px;
+    font-size:14px;
+    color:#555;
   }
+
 }
 
 .brand-card{
@@ -460,7 +478,6 @@ overflow-x:hidden;
   align-items:center;
   gap:15px;
   background:#efefef;
-  padding:20px;
   border-radius:14px;
   cursor:pointer;
   transition:all 0.3s ease;
@@ -1092,9 +1109,10 @@ overflow-x:hidden;
 }
 
 /* ========== Mobile (≤600px) ========== */
-@media (max-width:600px){
+@media (max-width:376px){
   .product-grid{
     grid-template-columns:1fr;
+    padding:40px 0;
   }
 
   .card{
