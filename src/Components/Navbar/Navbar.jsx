@@ -55,7 +55,7 @@ const Navbar = () => {
 
         <p className="phone">📞 +001234567890</p>
 
-        <p className="offer">
+        <p className="offers">
           Get 50% Off on Selected Items | <span className="shop-now">Shop Now</span>
         </p>
 
