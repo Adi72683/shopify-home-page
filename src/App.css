@@ -1,0 +1,80 @@
+/* ================= CSS (App.css) ================= */
+.app {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  background: #f5f7fa;
+}
+
+.dark {
+  background: #1e1e1e;
+  color: white;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px 0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.dark .card {
+  background: #2c2c2c;
+}
+
+input {
+  display: block;
+  margin: 10px 0;
+  padding: 8px;
+  width: 100%;
+}
+
+.primary-btn {
+  background: #4cafef;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-group button {
+  margin-right: 10px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th, .table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.product-card {
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.in { color: green; }
+.out { color: red; }
+
+.toggle {
+  margin-bottom: 10px;
+  padding: 8px;
+}
